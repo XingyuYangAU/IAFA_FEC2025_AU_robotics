@@ -61,14 +61,14 @@ for i in range(3):
     # ax.plot(time_log, filtered_force_log[:, i], 'r--', label='Filt ' + force_labels[i])
     ax.set_ylabel(f"{force_labels[i]} (N)")
     # ax.set_title(force_labels[i])
-    ax.legend(loc='upper right', frameon=False)
+    # ax.legend(loc='upper right', frameon=False)
     ax.grid(True)
 
 # --- Right Column: Motion (Position) Plots ---
 for i in range(3):
     ax = axs[i, 1]
     ax.plot(time_log, offset_log_mm[:, i], 'b-', label='Offset ' + axis_labels[i])
-    ax.plot(time_log, target_pose_log_mm[:, i], 'r-', label='Complaint ' + axis_labels[i])
+    ax.plot(time_log, target_pose_log_mm[:, i], 'r-', label='Compliant ' + axis_labels[i])
     ax.plot(time_log, reference_pose_log_mm[:, i], 'k--', label='Reference ' + axis_labels[i])
     ax.set_ylabel(f"{axis_labels[i]} (mm)")
     # ax.set_title(axis_labels[i])
