@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['big_interface', 'small_interface']
+
+roboflow:
+  workspace: vlam
+  project: bb_segment_interface
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/vlam/bb_segment_interface/dataset/2
