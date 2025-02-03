@@ -45,10 +45,10 @@ reference_pose_log_mm = reference_pose_log * 1000
 plt.rcParams['text.usetex'] = False
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.serif'] = ['Times New Roman', 'Times', 'DejaVu Serif']
-plt.rcParams['font.size'] = 9
+plt.rcParams['font.size'] = 7
 
 # --- Create a 3x2 Figure ---
-fig, axs = plt.subplots(3, 2, figsize=(4.13*2, 5), dpi=800, sharex=True)
+fig, axs = plt.subplots(3, 2, figsize=(4.13, 2.5), dpi=800, sharex=True)
 
 # --- Define Labels for Axes ---
 axis_labels = ['X', 'Y', 'Z']
@@ -81,5 +81,5 @@ axs[2, 1].set_xlabel("Time (s)")
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
 # --- Display the Figure ---
 plt.show(block=True)
-fig.savefig('VAC_for_gripper_insertion.png', dpi=800, bbox_inches='tight')
+fig.savefig('VAC_for_gripper_insertion_v2.png', dpi=800, bbox_inches='tight')
 
